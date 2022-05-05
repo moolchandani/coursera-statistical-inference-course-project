@@ -130,7 +130,7 @@ t.test(len ~ supp, paired = FALSE, var.equal = FALSE, data = ToothGrowth)
 All types of doses (0.5 - 2.0 mg/mL) have a p-value lower than 0.05 which means there is a difference in means. The null hypothesis can be rejected (when p is low H0 must go…) and there is a significant difference in supplement type.
 
 
-Then we can test whether OJ or VC per similar dosis of x mg/mL have statistical significant differences in mean length (tooth growth):
+Then we can test whether OJ or VC per similar doses of x mg/mL have statistical significant differences in mean length (tooth growth):
 
 ```{r}
 t.test(ToothGrowth$len ~ ToothGrowth$supp, var.equal = F, data = dose0.5)
